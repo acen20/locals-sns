@@ -1,0 +1,20 @@
+:root {
+  --background-color: #f4f4f4;
+  --accent: #00d177;
+  --font-bold: 800;
+  --font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+body {
+  background: var(--background-color);
+  font-family: var(--font-family);
+}
+
+.accent {
+  color: var(--accent) !important;
+}
+
+.font-bold {
+  font-weight: var(--font-bold) !important;
+}
