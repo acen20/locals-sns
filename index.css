@@ -9,6 +9,9 @@
   --font-light: 400;
   --border-circle: 50%;
   --border-sm: 5px;
+  --text-sm: 0.9rem;
+  --opacity-1: 1;
+  --color-faded-bg: 0.1;
 }
 
 body {
@@ -113,7 +116,37 @@ body {
 .post-user-stats,
 .post-time {
   font-size: 0.7rem;
-  ffont-weight: var(--font-light);
+  font-weight: 400;
+  opacity: var(--color-faded);
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+.opacity-1 {
+  opacity: var(--opacity-1) !important;
+}
+
+.post-controls {
+  cursor: pointer;
+}
+
+.post-controls:hover {
+  background: var(--background-color);
+}
+
+.post-caption-text {
+  font-size: 0.8rem;
+  font-weight: var(--font-light);
+  line-height: 1.1rem;
+}
+
+.post-caption .more-link:hover {
+  text-decoration: none;
+  background-color: rgba(var(--accent-rgb), var(--color-faded-bg));
+}
+
+.bold {
   font-weight: 500;
-  opacity: var(--color-faded) !important;
 }
