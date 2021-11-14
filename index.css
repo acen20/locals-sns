@@ -1,10 +1,11 @@
 :root {
   --background-color: #f4f4f4;
   --accent: #00d177;
+  --accent-rgb: 0, 209, 119;
   --font-bold: 800;
   --font-family: Roboto, "HelveticaNeue-Light", "Helvetica Neue Light",
     "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  --color-faded: ;
+  --color-faded: 0.8;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 
 .nav-item {
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 500;
 }
 
@@ -46,4 +47,13 @@ body {
 
 .active .nav-link {
   color: var(--accent) !important;
+}
+
+.text-muted {
+  opacity: var(--color-faded) !important;
+}
+
+.more-icon {
+  background-color: rgba(var(--accent-rgb), 0.1);
+  cursor: pointer;
 }
