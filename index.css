@@ -114,7 +114,8 @@ body {
   gap: 0.15em;
 }
 
-.post-user-name {
+.post-user-name,
+.user-assets .group-name {
   font-size: 0.9rem;
 }
 
@@ -169,6 +170,29 @@ body {
   transform: rotateY(180deg);
 }
 
-.footer-text {
+.post .footer-text {
   font-size: 0.85rem;
+}
+
+.user-assets .name {
+  font-size: 0.85rem;
+}
+
+.group img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: var(--border-circle);
+}
+
+.group-name {
+  line-height: 1.2rem;
+}
+
+.user-assets.bg-light {
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+
+.group {
+  border: 1px solid rgba(200, 200, 200, 0.15);
 }
