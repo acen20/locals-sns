@@ -45,44 +45,35 @@
       <div
         class="container-fluid shadow-sm bg-white position-sticky sticky-top"
       >
-        <nav class="navbar container navbar-expand-md navbar-light pb-0">
+        <nav
+          class="navbar d-flex justify-content-between container navbar-expand navbar-light pb-0"
+        >
           <a class="navbar-brand accent font-bold" href="#">LOCALS</a>
-          <div
-            class="input-group border border-sm border-1 p-0 col-md-3 d-lg-flex d-none col-12 ml-5"
-          >
+          <div class="input-group border border-sm border-1 p-0 ml-lg-5 w-auto">
             <input
               type="text"
-              class="form-faded border-0 form-control"
+              class="form-faded border-0 d-lg-block d-none form-control"
               placeholder="Search"
             />
             <div class="input-group-append">
-              <button
-                class="input-group-text text-decoration-none border-0 rounded bg-muted border-sm fa fa-search"
-              ></button>
+              <a
+                type="button"
+                class="input-group-text text-decoration-none border-0 py-2 py-lg-2 rounded bg-muted border-sm fa fa-search"
+              ></a>
             </div>
           </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-around w-100 mx-5">
+
+          <div class="overflow-hidden" id="navbarNav">
+            <ul class="navbar-nav justify-content-around w-100 mx-lg-5">
               <li class="nav-item active">
                 <div
-                  class="nav-link d-flex p-2 py-3 flex-column align-items-center"
+                  class="nav-link d-flex p-2 py-3 flex-column align-items-center h-100 justify-content-end"
                   href="#"
                 >
                   <span class="material-icons-round">
                     home
                   </span>
-                  <div>Home</div>
+                  <div class="d-sm-block d-none">Home</div>
                 </div>
               </li>
               <li class="nav-item text-muted">
@@ -92,7 +83,7 @@
                   ><span class="material-icons">
                     groups
                   </span>
-                  <div>Network</div></a
+                  <div class="d-sm-block d-none">Network</div></a
                 >
               </li>
               <li class="nav-item text-muted">
@@ -102,7 +93,7 @@
                   ><span class="material-icons">
                     work
                   </span>
-                  <div>Jobs</div></a
+                  <div class="d-sm-block d-none">Jobs</div></a
                 >
               </li>
               <li class="nav-item text-muted">
@@ -112,32 +103,34 @@
                   ><span class="material-icons-round">
                     email
                   </span>
-                  <div>Messages</div></a
+                  <div class="d-sm-block d-none">Messages</div></a
                 >
               </li>
-              <li class="nav-item text-muted">
+              <li class="nav-item d-sm-block d-none text-muted">
                 <a
                   class="nav-link d-flex p-2 py-3 flex-column align-items-center"
                   href="#"
                   ><span class="material-icons">
                     notifications
                   </span>
-                  <div>Notification</div></a
+                  <div class="d-sm-block d-none">Notification</div></a
                 >
               </li>
-              <li class="nav-item text-muted">
+              <li class="nav-item d-sm-block d-none text-muted">
                 <a
                   class="nav-link d-flex p-2 py-3 flex-column align-items-center"
                   href="#"
                   ><span class="material-icons">
                     account_circle
                   </span>
-                  <div>Profile</div></a
+                  <div class="d-sm-block d-none">Profile</div></a
                 >
               </li>
             </ul>
           </div>
-          <div class="material-icons-round rounded text-success more-icon p-2">
+          <div
+            class="material-icons-round rounded text-success more-icon p-md-2 p-0"
+          >
             more_vert
           </div>
         </nav>
@@ -617,11 +610,8 @@
                   expand_more
                 </span>
               </div>
-              <hr class="d-lg-none d-block w-100 my-1" />
-              <div
-                id="footer-company"
-                class="collapse navbar-collapse navbar-expand-md"
-              >
+              <hr class="d-lg-none d-block w-100" />
+              <div id="footer-company" class="collapse navbar-collapse">
                 <div class="company-links d-flex flex-column pt-lg-4">
                   <a
                     class="text-decoration-none bold text-secondary mb-3"
@@ -646,54 +636,90 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
-              <h4 class="name text-dark m-0">Support</h4>
-              <div class="company-links d-flex flex-column pt-3">
-                <a
-                  class="text-decoration-none bold text-secondary mt-3"
-                  href="#"
-                  >Help Center</a
+            <div class="col-lg-3 navbar-expand-lg">
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 class="name text-dark m-0">Support</h4>
+                <span
+                  class="navbar-toggler material-icons-outlined d-lg-none d-block"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#footer-support"
+                  aria-controls="footer-support"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
                 >
-                <a
-                  class="text-decoration-none bold text-secondary mt-3"
-                  href="#"
-                  >Safety Center</a
+                  expand_more
+                </span>
+              </div>
+              <hr class="d-lg-none d-block w-100" />
+              <div id="footer-support" class="collapse navbar-collapse">
+                <div class="company-links d-flex flex-column pt-lg-4">
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Help Center</a
+                  >
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Safety Center</a
+                  >
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Community Guidelines</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 navbar-expand-lg">
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 class="name text-dark m-0">Legal</h4>
+                <span
+                  class="navbar-toggler material-icons-outlined d-lg-none d-block"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#footer-legal"
+                  aria-controls="footer-legal"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
                 >
-                <a
-                  class="text-decoration-none bold text-secondary mt-3"
-                  href="#"
-                  >Community Guidelines</a
-                >
+                  expand_more
+                </span>
+              </div>
+              <hr class="d-lg-none d-block w-100" />
+              <div id="footer-legal" class="collapse navbar-collapse">
+                <div class="company-links d-flex flex-column pt-lg-4">
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Cookies Policy</a
+                  >
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Privacy Policy</a
+                  >
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Terms of Service</a
+                  >
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Law Enforcement</a
+                  >
+                </div>
               </div>
             </div>
             <div class="col-lg-3">
-              <h4 class="name text-dark m-0">Legal</h4>
-              <div class="company-links d-flex flex-column pt-3">
-                <a
-                  class="text-decoration-none bold text-secondary mt-3"
-                  href="#"
-                  >Cookies Policy</a
-                >
-                <a
-                  class="text-decoration-none bold text-secondary mt-3"
-                  href="#"
-                  >Privacy Policy</a
-                >
-                <a
-                  class="text-decoration-none bold text-secondary mt-3"
-                  href="#"
-                  >Terms of Service</a
-                >
-                <a
-                  class="text-decoration-none bold text-secondary mt-3"
-                  href="#"
-                  >Law Enforcement</a
-                >
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <h4 class="name text-dark m-0">Install App</h4>
-              <div class="app-links d-flex flex-column pt-3">
+              <h4 class="name text-dark text-center text-lg-left m-0">
+                Install App
+              </h4>
+              <div
+                class="app-links d-flex flex-lg-column flex-md-row pt-3 justify-content-lg-start justify-content-around"
+              >
                 <a
                   class="text-decoration-none bold text-secondary mt-3"
                   href="#"
