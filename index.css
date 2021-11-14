@@ -2,7 +2,7 @@
   --background-color: #f4f4f4;
   --accent: #00d177;
   --accent-rgb: 0, 209, 119;
-  --font-bold: 800;
+  --font-bold: 700;
   --font-family: Roboto, "HelveticaNeue-Light", "Helvetica Neue Light",
     "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   --color-faded: 0.8;
@@ -12,6 +12,7 @@
   --text-sm: 0.9rem;
   --opacity-1: 1;
   --color-faded-bg: 0.1;
+  --font-normal: 500;
 }
 
 body {
@@ -109,6 +110,10 @@ body {
   object-fit: cover;
 }
 
+.post-user-info {
+  gap: 0.15em;
+}
+
 .post-user-name {
   font-size: 0.9rem;
 }
@@ -116,7 +121,7 @@ body {
 .post-user-stats,
 .post-time {
   font-size: 0.7rem;
-  font-weight: 400;
+  font-weight: var(--font-normal);
   opacity: var(--color-faded);
 }
 
@@ -136,17 +141,34 @@ body {
   background: var(--background-color);
 }
 
-.post-caption-text {
-  font-size: 0.8rem;
+.post-caption-text,
+.more-link {
+  font-size: 0.9rem;
   font-weight: var(--font-light);
   line-height: 1.1rem;
 }
 
-.post-caption .more-link:hover {
+.more-link:hover {
   text-decoration: none;
   background-color: rgba(var(--accent-rgb), var(--color-faded-bg));
 }
 
+.more-link {
+  font-weight: var(--font-normal);
+}
+
+.post-content {
+  cursor: pointer;
+}
+
 .bold {
-  font-weight: 500;
+  font-weight: var(--font-normal);
+}
+
+.inverted-y {
+  transform: rotateY(180deg);
+}
+
+.footer-text {
+  font-size: 0.85rem;
 }
