@@ -41,8 +41,10 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container-fluid p-0 m-0">
-      <div class="container-fluid shadow-sm bg-white">
+    <div class="container-fluid p-0 m-0 position-relative">
+      <div
+        class="container-fluid shadow-sm bg-white position-sticky sticky-top"
+      >
         <nav class="navbar container navbar-expand-md navbar-light pb-0">
           <a class="navbar-brand accent font-bold" href="#">LOCALS</a>
           <div class="input-group p-0 w-25 ml-5">
@@ -155,7 +157,7 @@
               />
               <div class="profile-description pb-3">
                 <h4 class="name text-dark">Dmitry Kargaev<span></span></h4>
-                <h4 class="role text-dark m-auto">
+                <h4 class="role text-secondary bold m-auto">
                   Freelance UX/UI designer, 80+ projects in web design, mobile
                   apps (iOS & android) and creative projects. Open to offers.
                 </h4>
@@ -185,7 +187,9 @@
                       alt=""
                     />
                     <div class="post-user-info d-flex flex-column ml-1">
-                      <h4 class="post-user-name text-dark m-0">Panda Media</h4>
+                      <a href="#" class="post-user-name bold text-dark m-0">
+                        Panda Media
+                      </a>
                       <h4 class="post-user-stats text-muted m-0">
                         326 abbones
                       </h4>
@@ -274,7 +278,9 @@
                       alt=""
                     />
                     <div class="post-user-info d-flex flex-column ml-1">
-                      <h4 class="post-user-name text-dark m-0">Panda Media</h4>
+                      <a href="#" class="post-user-name text-dark bold m-0"
+                        >Panda Media</a
+                      >
                       <h4 class="post-user-stats text-muted m-0">
                         326 abbones
                       </h4>
@@ -317,7 +323,7 @@
                 <div class="post-content mt-3">
                   <img
                     class="w-100"
-                    src="https://c0.wallpaperflare.com/preview/250/807/592/person-human-market-shop.jpg"
+                    src="https://expertphotography.b-cdn.net/wp-content/uploads/2019/07/photography-aesthetic-golden-hour-portrait-of-girl.jpg"
                     alt=""
                   />
                 </div>
@@ -362,7 +368,9 @@
                       alt=""
                     />
                     <div class="post-user-info d-flex flex-column ml-1">
-                      <h4 class="post-user-name text-dark m-0">Panda Media</h4>
+                      <a href="#" class="post-user-name text-dark bold m-0"
+                        >Panda Media</a
+                      >
                       <h4 class="post-user-stats text-muted m-0">
                         326 abbones
                       </h4>
@@ -405,7 +413,7 @@
                 <div class="post-content mt-3">
                   <img
                     class="w-100"
-                    src="https://c0.wallpaperflare.com/preview/250/807/592/person-human-market-shop.jpg"
+                    src="https://data.whicdn.com/images/311725502/original.jpg"
                     alt=""
                   />
                 </div>
@@ -443,10 +451,12 @@
           </div>
           <div class="col-3">
             <!--user assets-->
-            <div class="col-12 user-assets bg-light py-3 px-3">
+            <div class="col-12 border-sm user-assets bg-light py-3 px-3 mb-3">
               <div class="header d-flex justify-content-between">
                 <h4 class="name m-0 text-dark">MY GROUPS</h4>
-                <h4 class="name accent m-0 text-dark">EDIT LIST</h4>
+                <a href="#" class="name accent bold m-0 text-decoration-none"
+                  >EDIT LIST</a
+                >
               </div>
               <hr />
               <div
@@ -490,6 +500,99 @@
                 class="name d-block bold text-decoration-none accent mt-3"
                 >SHOW ALL (8)</a
               >
+            </div>
+            <div class="col-12 user-assets border-sm bg-light py-3 px-3 mb-3">
+              <!--Followed Hashtags-->
+              <h4 class="name m-0 text-dark">FOLLOWED HASHTAGS</h4>
+              <hr />
+              <div class="hashtags-container d-flex flex-wrap">
+                <a href="#" class="hashtag name m-0 border-sm text-dark p-2">
+                  #work
+                </a>
+                <a href="#" class="hashtag name m-0 border-sm text-dark p-2">
+                  #business
+                </a>
+                <a href="#" class="hashtag name m-0 border-sm text-dark p-2">
+                  #hr
+                </a>
+                <a href="#" class="hashtag name m-0 border-sm text-dark p-2">
+                  #userinterface
+                </a>
+                <a href="#" class="hashtag name m-0 border-sm text-dark p-2">
+                  #digital
+                </a>
+                <a href="#" class="hashtag name m-0 border-sm text-dark p-2">
+                  #userexperience
+                </a>
+                <a href="#" class="hashtag name m-0 border-sm text-dark p-2">
+                  #ux
+                </a>
+                <a href="#" class="hashtag name m-0 border-sm text-dark p-2">
+                  #ui
+                </a>
+                <a href="#" class="hashtag name m-0 border-sm text-dark p-2">
+                  #freelance
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 border-sm user-assets bg-light py-3 px-3 mb-3">
+              <!--Trending articles-->
+              <div class="header d-flex justify-content-between">
+                <h4 class="name m-0 text-dark">TRENDING ARTICLES</h4>
+              </div>
+              <hr />
+              <div class="article d-flex p-2 mb-2">
+                <div>
+                  <img
+                    class=""
+                    src="https://static.onecms.io/wp-content/uploads/sites/34/2021/02/04/flower-embroidery-kit-0221-2000.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="article-details ml-3">
+                  <h4 class="article-name text-dark m-0">
+                    How I make cool designs?
+                  </h4>
+                  <span class="text-dark views d-block p-0 m-0"
+                    >6,340 viewers</span
+                  >
+                </div>
+              </div>
+              <div class="article d-flex p-2 mb-2">
+                <div>
+                  <img
+                    class=""
+                    src="https://s3-us-east-2.amazonaws.com/maryville/wp-content/uploads/2020/07/23103604/hr-team.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="article-details ml-3">
+                  <h4 class="article-name text-dark m-0">
+                    Advices for young HR-managers
+                  </h4>
+                  <span class="text-dark views d-block p-0 m-0"
+                    >8,123 viewers</span
+                  >
+                </div>
+              </div>
+              <div class="article d-flex p-2 mb-2">
+                <div>
+                  <img
+                    class=""
+                    src="https://usabilitygeek.com/wp-content/uploads/2020/06/website-usability-testing.width-750.png"
+                    alt=""
+                  />
+                </div>
+                <div class="article-details ml-3">
+                  <h4 class="article-name text-dark m-0">
+                    A little about usability testing
+                  </h4>
+                  <span class="text-dark views d-block p-0 m-0"
+                    >3,912 viewers</span
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>

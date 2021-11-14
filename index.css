@@ -13,6 +13,7 @@
   --opacity-1: 1;
   --color-faded-bg: 0.1;
   --font-normal: 500;
+  --color-blue: midnightblue;
 }
 
 body {
@@ -85,7 +86,6 @@ body {
 
 .profile-description .role {
   font-size: 0.75rem;
-  font-weight: var(--font-light);
   width: 80%;
   line-height: 1.1rem;
 }
@@ -146,7 +146,7 @@ body {
 .more-link {
   font-size: 0.9rem;
   font-weight: var(--font-light);
-  line-height: 1.1rem;
+  line-height: 1.25rem;
 }
 
 .more-link:hover {
@@ -193,11 +193,53 @@ body {
   background: rgba(255, 255, 255, 0.75) !important;
 }
 
-.group {
+.group,
+.article {
   border: 1px solid rgba(200, 200, 200, 0.15);
   cursor: pointer;
 }
 
 .text-decoration-none {
   text-decoration: none !important;
+}
+
+.user-assets .hashtag {
+  background: #e1ebee;
+  font-weight: var(--font-normal);
+  text-transform: lowercase;
+}
+
+.hashtags-container {
+  gap: 0.75em;
+}
+
+.article img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.article-name {
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.article {
+  border: none;
+}
+
+.article-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article .views {
+  font-size: 0.65rem;
+  font-weight: var(--font-normal);
 }
