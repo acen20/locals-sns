@@ -7,6 +7,8 @@
     "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   --color-faded: 0.8;
   --font-light: 400;
+  --border-circle: 50%;
+  --border-sm: 5px;
 }
 
 body {
@@ -68,7 +70,7 @@ body {
   height: 90px;
   width: 90px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: var(--border-circle);
   border: 4px solid white;
   margin: -38px auto 12px;
 }
@@ -91,4 +93,27 @@ body {
 
 .profile-stats .desc {
   font-size: 0.85rem;
+}
+
+.border-sm {
+  border-radius: var(--border-sm);
+  overflow: hidden;
+}
+
+.post-profile-photo {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.post-user-name {
+  font-size: 0.9rem;
+}
+
+.post-user-stats,
+.post-time {
+  font-size: 0.7rem;
+  ffont-weight: var(--font-light);
+  font-weight: 500;
+  opacity: var(--color-faded) !important;
 }
