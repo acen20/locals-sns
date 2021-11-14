@@ -1,5 +1,6 @@
 :root {
   --background-color: #f4f4f4;
+  --background-color-rgb: 244, 244, 244;
   --accent: #00d177;
   --accent-rgb: 0, 209, 119;
   --font-bold: 700;
@@ -242,4 +243,23 @@ body {
 .article .views {
   font-size: 0.65rem;
   font-weight: var(--font-normal);
+}
+
+.border-light {
+  border-color: rgba(var(--background-color-rgb), var(--color-faded-bg));
+}
+
+.footer .name {
+  font-size: 1rem;
+}
+.footer a {
+  font-size: 0.9rem;
+}
+
+.app-links img {
+  width: 160px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

@@ -47,15 +47,17 @@
       >
         <nav class="navbar container navbar-expand-md navbar-light pb-0">
           <a class="navbar-brand accent font-bold" href="#">LOCALS</a>
-          <div class="input-group p-0 w-25 ml-5">
+          <div
+            class="input-group border border-sm border-1 p-0 col-md-3 d-lg-flex d-none col-12 ml-5"
+          >
             <input
               type="text"
-              class="form-faded form-control"
+              class="form-faded border-0 form-control"
               placeholder="Search"
             />
             <div class="input-group-append">
               <button
-                class="input-group-text text-decoration-none bg-light fa fa-search"
+                class="input-group-text text-decoration-none border-0 rounded bg-muted border-sm fa fa-search"
               ></button>
             </div>
           </div>
@@ -142,7 +144,7 @@
       </div>
       <div class="container">
         <div class="row main mt-4">
-          <div class="col-3 user">
+          <div class="col-lg-3 col-md-12 user">
             <div class="col-12 bg-white p-0 text-center border-sm">
               <!--Profile-->
               <img
@@ -175,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 col-md-12">
             <!--Post-->
             <div class="col-12 bg-white border-sm p-0 py-3 mb-3">
               <div class="post w-100">
@@ -449,7 +451,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-12">
             <!--user assets-->
             <div class="col-12 border-sm user-assets bg-light py-3 px-3 mb-3">
               <div class="header d-flex justify-content-between">
@@ -460,7 +462,7 @@
               </div>
               <hr />
               <div
-                class="group bg-white p-2 border-sm d-flex justify-content-between align-items-center mb-2"
+                class="group bg-white p-2 border-sm d-flex justify-content-start align-items-center mb-2"
               >
                 <img
                   class=""
@@ -472,7 +474,7 @@
                 </h4>
               </div>
               <div
-                class="group bg-white p-2 border-sm d-flex justify-content-between align-items-center mb-2"
+                class="group bg-white p-2 border-sm d-flex justify-content-start align-items-center mb-2"
               >
                 <img
                   class=""
@@ -484,7 +486,7 @@
                 </h4>
               </div>
               <div
-                class="group bg-white p-2 border-sm d-flex justify-content-between align-items-center mb-2"
+                class="group bg-white p-2 border-sm d-flex justify-content-start align-items-center mb-2"
               >
                 <img
                   class=""
@@ -592,6 +594,118 @@
                     >3,912 viewers</span
                   >
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer bg-white">
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col-lg-3 navbar-expand-lg">
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 class="name text-dark m-0">Company</h4>
+                <span
+                  class="navbar-toggler material-icons-outlined d-lg-none d-block"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#footer-company"
+                  aria-controls="footer-company"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  expand_more
+                </span>
+              </div>
+              <hr class="d-lg-none d-block w-100 my-1" />
+              <div
+                id="footer-company"
+                class="collapse navbar-collapse navbar-expand-md"
+              >
+                <div class="company-links d-flex flex-column pt-lg-4">
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >About Us</a
+                  >
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Blog</a
+                  >
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Careers</a
+                  >
+                  <a
+                    class="text-decoration-none bold text-secondary mb-3"
+                    href="#"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="name text-dark m-0">Support</h4>
+              <div class="company-links d-flex flex-column pt-3">
+                <a
+                  class="text-decoration-none bold text-secondary mt-3"
+                  href="#"
+                  >Help Center</a
+                >
+                <a
+                  class="text-decoration-none bold text-secondary mt-3"
+                  href="#"
+                  >Safety Center</a
+                >
+                <a
+                  class="text-decoration-none bold text-secondary mt-3"
+                  href="#"
+                  >Community Guidelines</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="name text-dark m-0">Legal</h4>
+              <div class="company-links d-flex flex-column pt-3">
+                <a
+                  class="text-decoration-none bold text-secondary mt-3"
+                  href="#"
+                  >Cookies Policy</a
+                >
+                <a
+                  class="text-decoration-none bold text-secondary mt-3"
+                  href="#"
+                  >Privacy Policy</a
+                >
+                <a
+                  class="text-decoration-none bold text-secondary mt-3"
+                  href="#"
+                  >Terms of Service</a
+                >
+                <a
+                  class="text-decoration-none bold text-secondary mt-3"
+                  href="#"
+                  >Law Enforcement</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="name text-dark m-0">Install App</h4>
+              <div class="app-links d-flex flex-column pt-3">
+                <a
+                  class="text-decoration-none bold text-secondary mt-3"
+                  href="#"
+                >
+                  <img src="images/google-play-badge.png" alt="" />
+                </a>
+                <a
+                  class="text-decoration-none bold text-secondary mt-3"
+                  href="#"
+                >
+                  <img src="images/apple-badge.png" alt="" />
+                </a>
               </div>
             </div>
           </div>
