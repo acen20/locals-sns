@@ -6,6 +6,7 @@
   --font-family: Roboto, "HelveticaNeue-Light", "Helvetica Neue Light",
     "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   --color-faded: 0.8;
+  --font-light: 400;
 }
 
 body {
@@ -56,4 +57,38 @@ body {
 .more-icon {
   background-color: rgba(var(--accent-rgb), 0.1);
   cursor: pointer;
+}
+
+.cover-photo {
+  object-fit: cover;
+  height: 100px;
+}
+
+.profile-photo {
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: -38px auto 12px;
+}
+
+.profile-description .name {
+  font-size: 1rem;
+}
+
+.profile-description .role {
+  font-size: 0.75rem;
+  font-weight: var(--font-light);
+  width: 80%;
+  line-height: 1.1rem;
+}
+
+.profile-stats .number {
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+.profile-stats .desc {
+  font-size: 0.85rem;
 }
