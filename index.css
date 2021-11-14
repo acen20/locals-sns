@@ -195,4 +195,9 @@ body {
 
 .group {
   border: 1px solid rgba(200, 200, 200, 0.15);
+  cursor: pointer;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
 }
