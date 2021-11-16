@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
 :root {
   --background-color: #f4f4f4;
   --background-color-rgb: 244, 244, 244;
@@ -45,8 +47,16 @@ body {
   font-weight: 500;
 }
 
+.nav-link {
+  color: var(--color-bg);
+}
+
+.nav-link:hover {
+  color: #000;
+  transition: 400ms all ease-out;
+}
 .navbar .material-icons {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .active {
@@ -144,7 +154,8 @@ body {
 }
 
 .post-caption-text,
-.more-link {
+.more-link,
+.footer-footer-text {
   font-size: 0.9rem;
   font-weight: var(--font-light);
   line-height: 1.25rem;
@@ -262,6 +273,19 @@ body {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.nav-custom::-webkit-scrollbar {
+  display: none;
+}
+.footer-socials {
+  gap: 2em;
+  margin: 0;
+}
+.footer-socials a {
+  font-size: 1.4rem;
+  margin: 0;
+  color: var(--accent);
 }
 
 @media (max-width: 768px) {
