@@ -9,3 +9,10 @@ links.forEach((link) => {
     element.classList.add("active");
   });
 });
+
+let expand_btns = document.querySelectorAll(".expand");
+expand_btns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.currentTarget.classList.toggle("rotate-180-X");
+  });
+});
